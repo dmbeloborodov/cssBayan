@@ -1,0 +1,23 @@
+@import url('./rest.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sono', sans-serif;
+    color: #000000;
+    background-color: rgb(127, 225, 255);
+}
+
+.header {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+.header-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0.60em 0;
+}
