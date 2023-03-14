@@ -20,7 +20,7 @@ h2 {
 }
 
 .header-title {
-    font-size: 2.5em;
+    font-size: 7.5em;
     font-weight: 600;
     margin: 0.60em 0;
     text-align: center;
@@ -131,4 +131,84 @@ span {
 
 .container:hover h2 {
     color: #000000;
+}
+
+
+
+@media (max-width: 1920px) { 
+
+    .header-title {
+        font-size: 4.5em;
+    }
+}
+
+@media (max-width: 820px) { 
+
+    .header {
+        margin-top: 5vh;
+    }
+
+    .header-title {
+        font-size: 3.5em;
+        margin: 0.938rem 0;
+    }
+
+    .container {
+        margin-bottom: 5vh;
+        padding: 1.25rem;
+    }
+
+}
+
+@media (max-width: 600px) { 
+
+    .acor-title {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+}
+
+@media (max-width: 520px) { 
+
+    .acor-title {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+    
+}
+
+@media (max-width: 470px) { 
+
+    .header {
+        margin-top: 2vh;
+    }
+
+    .header-title {
+        font-size: 2.5em;
+    }
+
+    .acor-title {
+        font-size: 0.688rem;
+        font-weight: 600;
+    }
+    
+}
+
+@media (max-width: 385px) { 
+
+    .header {
+        margin-top: 1vh;
+    }
+
+    .header-title {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .acor-title {
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+    
 }
