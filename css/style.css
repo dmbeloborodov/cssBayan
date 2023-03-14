@@ -6,8 +6,11 @@
 
 body {
     font-family: 'Sono', sans-serif;
-    color: #000000;
     background-color: rgb(69, 110, 120);
+}
+
+h2 {
+    color: rgba(55, 13, 97, 0.25);
 }
 
 .header {
@@ -120,4 +123,12 @@ span {
 .container-item:active .acor-body-img {
     opacity: 0.5;
     transition: all 0.2s;
+}
+
+.input-acor:checked + label  h2 {
+    color: #000;
+}
+
+.container:hover h2 {
+    color: #000000;
 }
