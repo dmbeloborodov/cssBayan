@@ -51,8 +51,7 @@ body {
 .acor-title {
     max-width: 60rem;
     width: 100%;
-    padding-top: 0.625rem;
-    margin-bottom: 0.938rem;
+    padding: 0.625rem;
 
     display: flex;
     justify-content: space-between;
@@ -62,4 +61,63 @@ body {
     cursor: pointer;
     background-color: rgba(100, 138, 146, 0.74);
     border-top: solid 0.2em rgb(59, 130, 144);
+}
+
+span {
+    visibility: hidden;
+    font-size: 1.125em;
+    transition: all 0.2s ease;
+}
+
+.acor-body{
+    width: 100%;
+    height:0;
+
+    padding:0;
+    margin:auto;
+
+    display: flex;
+    justify-content: center;
+
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+}
+
+.input-acor:checked + label + .acor-body {
+    padding: 0.625rem;
+    height: auto;
+    visibility: visible;
+    overflow: none;
+    opacity: 1;
+}
+
+.input-acor:hover + label + .acor-body {
+    padding: 0.625rem;
+    height: auto;
+    visibility: visible;
+    overflow: none;
+    opacity: 1;
+}
+
+.input-acor:checked + .acor-title span {
+    transform: rotate(90deg);
+    color: #000000;
+}
+
+.container:hover span {
+    visibility: visible;
+}
+
+.container-item:hover span {
+    transform: rotate(90deg);
+    color: #000000;
+}
+
+.container-item:active .acor-title,
+.container-item:active .acor-body-img {
+    opacity: 0.5;
+    transition: all 0.2s;
 }
